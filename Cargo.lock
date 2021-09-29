@@ -225,7 +225,7 @@ dependencies = [
 [[package]]
 name = "druid"
 version = "0.7.0"
-source = "git+https://github.com/linebender/druid.git#0223076bc72084a197772fab2de579be6acb94f8"
+source = "git+https://github.com/linebender/druid.git#90a7ab9392a134f5c9c3ab46113a8579ae3a5fce"
 dependencies = [
  "console_error_panic_hook",
  "druid-derive",
@@ -246,7 +246,7 @@ dependencies = [
 [[package]]
 name = "druid-derive"
 version = "0.4.0"
-source = "git+https://github.com/linebender/druid.git#0223076bc72084a197772fab2de579be6acb94f8"
+source = "git+https://github.com/linebender/druid.git#90a7ab9392a134f5c9c3ab46113a8579ae3a5fce"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -256,7 +256,7 @@ dependencies = [
 [[package]]
 name = "druid-shell"
 version = "0.7.0"
-source = "git+https://github.com/linebender/druid.git#0223076bc72084a197772fab2de579be6acb94f8"
+source = "git+https://github.com/linebender/druid.git#90a7ab9392a134f5c9c3ab46113a8579ae3a5fce"
 dependencies = [
  "anyhow",
  "bitflags",
@@ -305,7 +305,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e78d4f1cc4ae33bbfc157ed5d5a5ef3bc29227303d595861deb238fcec4e9457"
 
 [[package]]
-name = "expr-druid-1"
+name = "expr-1"
 version = "0.1.0"
 dependencies = [
  "druid",
@@ -712,9 +712,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "libc"
-version = "0.2.102"
+version = "0.2.103"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a2a5ac8f984bfcf3a823267e5fde638acc3325f6496633a5da6bb6eb2171e103"
+checksum = "dd8f7255a17a627354f321ef0055d63b898c6fb27eff628af4d1b66b7331edf6"
 
 [[package]]
 name = "log"
@@ -1067,9 +1067,9 @@ checksum = "c307a32c1c5c437f38c7fd45d753050587732ba8628319fbdf12a7e289ccc590"
 
 [[package]]
 name = "smallvec"
-version = "1.6.1"
+version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e"
+checksum = "1ecab6c735a6bb4139c0caafd0cc3635748bbb3acf4550e8138122099251f309"
 
 [[package]]
 name = "stable_deref_trait"

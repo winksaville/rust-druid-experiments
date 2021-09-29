@@ -1,10 +1,15 @@
-# Expr-druid-1
+Druid Experiments
 
-Experiment with Druid GUI.
+Experiment with the rust based Druid GUI Framework
 
-This is [<rr>/examples/text.rs](https://github.com/linebender/druid/blob/754d934d8125f2d1035f5aeb14cf1178af5b6811/druid/examples/text.rs)
+## Expr-1
 
-![Window](/assets/screenshot-window.png):
+[expr-1](expr-1/README.md) is `linebender/druid/druid/examples/text.rs`
+```
+cargo run --bin expr-1
+```
 
-## Nomenclature
- - `<rr>`: Repo Root, executing `git clone https://github.com/linebender/druid ~/prgs/druid` the path ~/prgs/druid is `<rr>`
+## Footnotes
+
+<a id="RR"></a>
+[RR]: Repo Root, executing `git clone https://github.com/winksaville/rust-druid-experiments ~/prgs/druid-experiments` the path ~/prgs/druid-experiments is `RR`
