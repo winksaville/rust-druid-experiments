@@ -1,4 +1,5 @@
 [workspace]
 members = [
   "expr-1",
+  "scrolling-1",
 ]

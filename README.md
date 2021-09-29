@@ -4,9 +4,16 @@ Experiment with the rust based Druid GUI Framework
 
 ## Expr-1
 
-[expr-1](expr-1/README.md) is `linebender/druid/druid/examples/text.rs`
+[RR](#RR)/[expr-1](expr-1/README.md) is `linebender/druid/druid/examples/text.rs`
 ```
 cargo run --bin expr-1
+```
+
+## Scrolling-1
+
+[RR](#RR)/[scrolling-1](scrolling-1/README.md) based on `https://github.com/linebender/druid/issues/1990`
+```
+cargo run --bin scrolling-1 -- 10000
 ```
 
 ## Footnotes
