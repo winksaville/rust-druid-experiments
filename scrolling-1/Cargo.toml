@@ -1,5 +1,6 @@
 [package]
 name = "scrolling-1"
+authors = [ "Wink Saville <wink@saville.com>", ]
 version = "0.1.0"
 edition = "2018"
 

@@ -7,7 +7,7 @@ uses Label instead of TextBox and allows a command line parameter to specify `li
 
 ## Run
 ```
-cargo run --bin scrolling-1 -- 100
+cargo run --bin scrolling-1 100
 ```
 
 ![Window](assets/screenshot.png):

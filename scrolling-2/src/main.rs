@@ -1,8 +1,16 @@
-// Based on: https://github.com/linebender/druid/issues/1990 but
-// use Label instead of TextBox as the data is immutable.
+// Based on scrolling-1 but create a Vec<String>.
 use druid::widget::{Flex, Label};
 use druid::{AppLauncher, Widget, WidgetExt, WindowDesc};
 use std::env;
+
+fn create_data(line_cnt: u64) -> Vec<String> {
+    let mut lines = vec![];
+    for i in 0..line_cnt {
+        lines.push(format!("line {}:", i));
+    }
+
+    lines
+}
 
 pub fn main() {
     let args: Vec<String> = env::args().collect();
@@ -13,22 +21,24 @@ pub fn main() {
     let line_cnt = match args[1].parse::<u64>() {
         Ok(cnt) => cnt,
         _ => {
-            println!("Expected first parameter to be number of lines as u64");
+            println!("Expected first parameter to be an u64 number of lines");
             return;
         }
     };
 
-    let window = WindowDesc::new(build_widget(line_cnt)).title(format!("{} {}", args[0], line_cnt));
+    let lines = create_data(line_cnt);
+
+    let window = WindowDesc::new(build_widget(lines)); //.title(format!("{} {}", args[0], line_cnt));
     AppLauncher::with_window(window)
         .log_to_console()
         .launch("".to_string())
         .expect("launch failed");
 }
 
-fn build_widget(line_cnt: u64) -> impl Widget<String> {
+fn build_widget(lines: Vec<String>) -> impl Widget<String> {
     let mut col = Flex::column();
-    for i in 0..line_cnt {
-        col.add_child(Label::new(format!("line {}", i)));
+    for s in lines {
+        col.add_child(Label::new(s));
     }
     col.scroll().vertical()
 }

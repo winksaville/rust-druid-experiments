@@ -2,4 +2,5 @@
 members = [
   "expr-1",
   "scrolling-1",
+  "scrolling-2",
 ]
